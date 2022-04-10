@@ -7,7 +7,6 @@ Future<NewsModel?> callApiForNews() async {
   NewsModel? data;
   Dio dio = new Dio();
   dio.options.headers["Content-Type"] = "multipart/form-data";
-  dio.options.headers["Cookie"] = "PHPSESSID=bkvkbqr2kphppo4n2u4efvrt05";
   Map<String, dynamic> dict = {};
 
   FormData formData = new FormData.fromMap(dict);
